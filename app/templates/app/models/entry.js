@@ -5,6 +5,8 @@ var EntrySchema = new Schema({
   title: String,
   link: String,
   content: String
+}, {
+  versionKey: false
 });
 
 EntrySchema.virtual('date').get(function(){
