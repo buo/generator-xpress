@@ -3,8 +3,8 @@ var Schema = mongoose.Schema;
 
 var EntrySchema = new Schema({
   title: String,
-  url: String,
-  text: String
+  link: String,
+  content: String
 });
 
 EntrySchema.virtual('date').get(function(){
