@@ -13,6 +13,8 @@ module.exports = function(app, config) {
   app.locals.ENV = env;
   app.locals.ENV_DEVELOPMENT = env == 'development';
 
+  app.disable('x-powered-by');
+
   app.set('views', config.root + '/app/views');
   app.set('view engine', 'jade');
 
