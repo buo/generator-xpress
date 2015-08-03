@@ -8,7 +8,7 @@ module.exports = function (app) {
 };
 
 router.get('/', function (req, res, next) {
-  Entry.find(function (err, entries) {
+  Entry.all().limit(10).exec(function (err, entries) {
     if (err) return next(err);
     res.render('index', {
       entries: entries
