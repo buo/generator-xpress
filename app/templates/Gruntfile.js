@@ -23,7 +23,8 @@ module.exports = function (grunt) {
           style: 'compressed'
         },
         files: {
-          'public/css/style.css': 'public/css/style.scss'
+          //'public/css/style.css': 'public/css/style.scss'
+          'app/views/style.css': 'public/css/style.scss'
         }
       }
     },
