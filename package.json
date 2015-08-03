@@ -1,0 +1,28 @@
+{
+  "name": "generator-xpress",
+  "version": "1.0.0",
+  "description": "A nodejs express generator for Yeoman",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "homepage": "https://github.com/buo/generator-xpress",
+  "bugs": "https://github.com/buo/generator-xpress/issues",
+  "author": {
+    "name": "buo",
+    "email": "buo@users.noreply.github.com"
+  },
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/buo/generator-xpress.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "glob": "^5.0.14",
+    "mkdirp": "^0.5.1",
+    "underscore.string": "^3.1.1"
+  }
+}
