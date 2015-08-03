@@ -1,0 +1,7 @@
+mixin list(entries)
+  if entries.length > 0
+    ul
+      each e in entries
+        li: a(href=e.link)= e.title
+  else
+    p no entries
