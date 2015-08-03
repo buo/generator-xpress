@@ -1,14 +1,14 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var ArticleSchema = new Schema({
+var EntrySchema = new Schema({
   title: String,
   url: String,
   text: String
 });
 
-ArticleSchema.virtual('date').get(function(){
+EntrySchema.virtual('date').get(function(){
   return this._id.getTimestamp();
 });
 
-mongoose.model('Article', ArticleSchema);
+mongoose.model('Entry', EntrySchema);
