@@ -1,7 +1,5 @@
-// Example model
-
-var mongoose = require('mongoose'),
-  Schema = mongoose.Schema;
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
 var ArticleSchema = new Schema({
   title: String,
@@ -9,10 +7,8 @@ var ArticleSchema = new Schema({
   text: String
 });
 
-ArticleSchema.virtual('date')
-  .get(function(){
-    return this._id.getTimestamp();
-  });
+ArticleSchema.virtual('date').get(function(){
+  return this._id.getTimestamp();
+});
 
 mongoose.model('Article', ArticleSchema);
-
