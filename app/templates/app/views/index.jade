@@ -1,5 +1,8 @@
 extends layout
 
+block title
+  | Generator-Xpress
+
 block content
-  h1= title
-  p Welcome to #{title}
+  each entry in entries
+    p= entry.title
