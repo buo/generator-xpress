@@ -21,8 +21,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "glob": "^5.0.14",
+    "glob": "^5.0.15",
     "mkdirp": "^0.5.1",
-    "underscore.string": "^3.1.1"
+    "underscore.string": "^3.2.2"
   }
 }
