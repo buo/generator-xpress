@@ -5,11 +5,15 @@ EntrySchema = new Schema
   title: String
   link: String
   content: String
+  updated: {
+    type: Date
+    default: Date.now
+  }
 ,
   versionKey: false
 
 EntrySchema.virtual('date').get ->
-  @_id.getTimestamp()
+  moment(@updated).format('YYYY-MM-DD')
 
 EntrySchema.statics.all = ->
   this.find().sort({_id: -1})
