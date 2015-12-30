@@ -14,4 +14,4 @@ EntrySchema.virtual('date').get ->
 EntrySchema.statics.all = ->
   this.find().sort({_id: -1})
 
-mongoose.model 'Article', EntrySchema
+mongoose.model 'Entry', EntrySchema
